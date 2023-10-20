@@ -20,13 +20,14 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Bai Jamjuree", sans-serif;
-  --biggest-font-size: 3.0rem;
+  --biggest-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
+
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -45,10 +46,11 @@
     --biggest-font-size: 4.5rem;
     --h1-font-size: 3rem;
     --h2-font-size: 1.5rem;
-    --h3-font-size: 1.5rem;
-    --normal-font-size: 1.4rem;
-    --small-font-size: 1rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
     --smaller-font-size: .813rem;
+  
   }
 }
 
@@ -98,7 +100,7 @@ img {
 }
 
 .change-theme{
-  font-size: 1.5rem;
+  font-size: var(--normal-font-size);
   color: var(--title-color);
   cursor: pointer;
   transition: color .3s;
@@ -371,7 +373,7 @@ body.dark-theme{
 .nav__link-button {
   position:relative;
   color: var(--text-color-light);
-  font-size: var(--h3-font-size); 
+  font-size: 1.2rem; 
   font-weight: var(--font-semi-bold);
   transition: color .3s;
 }
@@ -437,15 +439,6 @@ body.dark-theme{
 
 /*=============== HOME ===============*/
 
-.home__description{
-  position: relative;
-  align-self: center;
-  justify-self: center;
-  color: var(--title-color);
-  top: 14rem;
-}
-
-
 .home__name{
   font-size: var(--biggest-font-size);
   position: relative;
@@ -453,7 +446,7 @@ body.dark-theme{
   align-items: center;
   justify-self: center;
   padding-bottom: 1.5rem;
-  top: 70%;
+  top: 67%;
 
 }
 
@@ -482,7 +475,7 @@ body.dark-theme{
 .home__social-link{
   color: var(--black-color);
   font-size: 1.8rem;
-  padding: 6px;
+  padding: .9rem;
   display: grid;
   place-items: center;
   transition: background-color .3s;
@@ -636,14 +629,11 @@ body.dark-theme{
 
 /*=============== SKILLS =============*/
 
-.skills__container.container.container.grid{
 
-  row-gap: 1rem;
-  transition: background-color .4s;
-}
 
 .skills__title{
   display: absolute;
+  position: relative;
   justify-content: center;
   align-items: center;
   column-gap: .5rem;
@@ -652,27 +642,21 @@ body.dark-theme{
   margin-bottom: 2.5rem;
 }
 
-.skills__container .container .grid .section__border{
-  grid-template-columns: 250px;
-  justify-content:center;
-  row-gap: 2rem;
-  padding-top: 1rem;
-  position: relative;
-}
 
 
 .skills__title{
   display: absolute;
+  margin-left: auto;
   justify-content: center;
   align-items: center;
   column-gap: .5rem;
-  font-size: 1.40rem;
-  font-weight: var(--font-bold);
+  font-size: 1.30rem;
+  font-weight: var(--font-semi-bold);
   margin-bottom: 2.5rem;
 }
 
 .skills__title i{
-  font-size: 2rem;
+  font-size:1.3rem;
   font-weight: initial;
 }
 
@@ -699,8 +683,8 @@ body.dark-theme{
 
 .skills__data{
 
- width: 10rem;
- height: 10rem;
+ width: 7rem;
+ height: 7rem;
  display:flex;
  justify-content: center;
  align-items:center;
@@ -712,7 +696,7 @@ body.dark-theme{
 }
 
 .svg-img {
-  transform: scale(1.3); 
+  transform: scale(1); 
   padding-bottom: 1rem;
 }
 
@@ -724,12 +708,9 @@ body.dark-theme{
 }
 
 .skills__blob img{
-  width: 53px;
+  width: 50px;
   padding-bottom: 1rem;
 }
-
-.tech__subtitle{align-self:flex-start;font-size:var(--medium-size);font-weight:var(--bold-font);padding:.8em 0}
-
 
 .skills__name{
   font-size: var(--normal-font-size);
@@ -739,7 +720,7 @@ body.dark-theme{
 
 /*=============== SERVICES ===============*/
 .services__container{
-  grid-template-columns: 350px;
+  grid-template-columns: 300px;
   justify-content: center;
   row-gap: 2rem;
   padding-top: 1rem;
@@ -753,7 +734,7 @@ body.dark-theme{
   height: 100%;
   background-color: var(--body-color);
   border: 4px solid var(--black-color);
-  padding: 7rem 1rem 4rem;
+  padding: 7rem 1.5rem 3rem;
   z-index: 5;
   position:relative;
   transition: background-color .4s, border 4s;
@@ -1173,9 +1154,19 @@ body.dark-theme{
     transform: translateX(0)
   }
 
+  .skills__container{
+    grid-template-columns: 350px;
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 1rem;
+  }
+
   .skills__info{
+    width: 20%;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    grid-template-rows: 1fr;
+    justify-content: left;
   }
 
   .skills__container.container.grid.section__border{
@@ -1270,6 +1261,14 @@ body.dark-theme{
     bottom: -2.5rem;
   }
 
+
+  .skills__container{
+    grid-template-columns: 300px;
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 1rem;
+  }
+
   .skills__info{
     width: 70%;
     display: grid;
@@ -1304,13 +1303,19 @@ body.dark-theme{
     font-size: 1.3rem
   }
 
-
 }
 
 @media screen and (min-width: 480px){
 
   p.home__description{
     margin-bottom: 2.8rem;
+  }
+
+  .skills__container{
+    grid-template-columns: 500px;
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 1rem;
   }
 }
 
@@ -1346,7 +1351,7 @@ body.dark-theme{
 
   .about__container,
   .projects__container{
-    grid-template-columns: 700px;
+    grid-template-columns: 592px;
     justify-content: center;
   }
 
@@ -1375,7 +1380,7 @@ body.dark-theme{
   }
 
   .home__social-link{
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -1412,7 +1417,15 @@ body.dark-theme{
     
     
     .home__social-link{
-      font-size: 3rem;
+      font-size: 2rem;
+    }
+
+
+    .skills__container{
+      grid-template-columns: 759px;
+      justify-content: center;
+      row-gap: 2rem;
+      padding-top: 1rem;
     }
 
     .skills__info{
@@ -1446,11 +1459,12 @@ body.dark-theme{
     position: absolute;
     bottom: 1rem;
     display: grid;
-    right: 35rem
+    right: 27.5rem;
+    top: -3rem;
   }
 
   .home__social-link{
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
 
 
@@ -1473,8 +1487,8 @@ body.dark-theme{
   }
 
   .nav{
-    height: calc(var(--header-height) + 2rem);
-    column-gap: 4rem;
+    height: calc(var(--header-height) + 1.8rem);
+    column-gap: 3rem;
   }
   .nav__close,
   .nav__toggle,
@@ -1485,7 +1499,7 @@ body.dark-theme{
 
   .nav__list{
     flex-direction: row;
-    column-gap: 4rem;
+    column-gap: 3rem;
   }
 
   .nav__menu{
@@ -1512,7 +1526,7 @@ body.dark-theme{
   .nav__link-button{
     background-color: var(--black-color);
     color:var(--white-color);
-    padding: 1.1rem 1.5rem;
+    padding: .7rem 1.25rem;
   }
 
   .nav__link-button:hover{
@@ -1568,7 +1582,7 @@ body.dark-theme{
   }
 
   .about__description{
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
   }
 
   .about__description::after{
@@ -1585,7 +1599,7 @@ body.dark-theme{
   }
 
   .projects__card{
-    padding: 1.25rem 1.25rem 2.5rem;
+    padding: 1rem 1rem 1rem;
   }
 
   .projects__image{
@@ -1601,12 +1615,12 @@ body.dark-theme{
   }
 
   .projects__card{
-    width: 500px
+    width: 475px
   }
 
   .projects__link,
   .projects__link i{
-    font-size: 1.8rem
+    font-size: 1.2rem
   }
 
   .projects__description{
@@ -1617,7 +1631,7 @@ body.dark-theme{
     justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(2, 30em);
-    width: 100%;
+    width: 90%;
     row-gap: 1rem;
     margin-left: 3rem;
     
@@ -1699,7 +1713,7 @@ body.dark-theme{
   }
 
   .change-theme{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     color: var(--title-color);
     cursor: pointer;
     transition: color .3s;
@@ -1710,11 +1724,11 @@ body.dark-theme{
   
   .projects__link,
   .projects__link i{
-    font-size: 1.4rem
+    font-size: 1.5rem
   }
 
   .projects__description{
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .projects__container.container.grid{
