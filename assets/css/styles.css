@@ -50,7 +50,7 @@
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
-  
+
   }
 }
 
@@ -117,8 +117,8 @@ body.dark-theme{
   --container-color: hsl(0, 0%, 12%);
 }
 
-/*========== 
-	Color changes in some parts of 
+/*==========
+	Color changes in some parts of
 	the website, in dark theme
 ==========*/
 .dark-theme .shadow-header{
@@ -199,14 +199,14 @@ body.dark-theme{
 
 .grid {
   display: grid;
-  
+
 }
 
 .section {
   padding-block: 4rem 2rem;
 }
 /*about me*/
-.section__title-1, 
+.section__title-1,
 .section__title-2 {
   position: relative;
   font-size: var(--h1-font-size);
@@ -214,13 +214,13 @@ body.dark-theme{
   margin: .75rem auto 2rem;
 }
 
-.section__title-1 span, 
+.section__title-1 span,
 .section__title-2 span {
   z-index: 5;
   position: relative;
 }
 
-.section__title-1::after, 
+.section__title-1::after,
 .section__title-2::after {
   content: "";
   width: 40px;
@@ -365,7 +365,7 @@ body.dark-theme{
 .nav__link{
  position:relative;
  color: var(--text-color-light);
- font-size: var(--h3-font-size); 
+ font-size: var(--h3-font-size);
  font-weight: var(--font-semi-bold);
  transition: color .3s;
 }
@@ -373,7 +373,7 @@ body.dark-theme{
 .nav__link-button {
   position:relative;
   color: var(--text-color-light);
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   font-weight: var(--font-semi-bold);
   transition: color .3s;
 }
@@ -467,7 +467,7 @@ body.dark-theme{
 .home__container.container.grid{
   position: relative;
   justify-self: center;
-  height: 100vh; 
+  height: 100vh;
   justify-content: center;
 }
 
@@ -628,9 +628,6 @@ body.dark-theme{
 
 
 /*=============== SKILLS =============*/
-
-
-
 .skills__title{
   display: absolute;
   position: relative;
@@ -696,7 +693,7 @@ body.dark-theme{
 }
 
 .svg-img {
-  transform: scale(1); 
+  transform: scale(1);
   padding-bottom: 1rem;
 }
 
@@ -708,7 +705,7 @@ body.dark-theme{
 }
 
 .skills__blob img{
-  width: 50px;
+  width: 45px;
   padding-bottom: 1rem;
 }
 
@@ -716,6 +713,7 @@ body.dark-theme{
   font-size: var(--normal-font-size);
   font-weight: var(--font-regular);
 }
+
 
 
 /*=============== SERVICES ===============*/
@@ -1051,7 +1049,7 @@ body.dark-theme{
 }
 
 .contact__social-link{
-  
+
   color: var(--black-color);
   padding: 6px;
   font-size: 1.25rem;
@@ -1154,26 +1152,27 @@ body.dark-theme{
     transform: translateX(0)
   }
 
-  .skills__container{
-    grid-template-columns: 350px;
-    justify-content: center;
-    row-gap: 2rem;
-    padding-top: 1rem;
+
+  .skills__blob img{
+    width: 40px;
+    padding-bottom: 1rem;
   }
 
-  .skills__info{
-    width: 20%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    justify-content: left;
-  }
+.skills__container{
+  grid-template-columns: 300px;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
 
-  .skills__container.container.grid.section__border{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
+.skills__info{
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  gap: 1em;
+}
 
   .home__container.container.grid{
     height: 100vh;
@@ -1194,7 +1193,7 @@ body.dark-theme{
     justify-self: center;
     padding-top:0.5rem;
   }
-  
+
   .home__social{
     position: relative;
     justify-self: left;
@@ -1207,7 +1206,7 @@ body.dark-theme{
   .home__description b{
     margin: auto;
   }
-  
+
   .home__name{
     margin-top: -5rem;
     font-size: 3.5em;
@@ -1239,7 +1238,7 @@ body.dark-theme{
 
 
 /* For medium devices */
-@media screen and (min-width: 424px){
+@media screen and (min-width: 421px){
 
 
   p.home__description{
@@ -1251,7 +1250,7 @@ body.dark-theme{
     justify-self: center;
     padding-top:0.5rem;
   }
-  
+
   .home__social{
     position: relative;
     justify-self: left;
@@ -1259,6 +1258,11 @@ body.dark-theme{
     flex-direction: row;
     column-gap: 1rem;
     bottom: -2.5rem;
+  }
+
+  .skills__blob img{
+    width: 45px;
+    padding-bottom: 1rem;
   }
 
 
@@ -1279,11 +1283,11 @@ body.dark-theme{
   }
 
   .projects__container.container.grid{
-    
+
     row-gap: 2rem;
      display: grid;
      grid-template-columns: 1fr;
-   
+
   }
 
   .projects__subtitle{
@@ -1312,10 +1316,19 @@ body.dark-theme{
   }
 
   .skills__container{
-    grid-template-columns: 500px;
+    grid-template-columns: 300px;
     justify-content: center;
     row-gap: 2rem;
     padding-top: 1rem;
+  }
+
+  .skills__info{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    gap: 1em;
   }
 }
 
@@ -1342,7 +1355,7 @@ body.dark-theme{
 @media screen and (min-width: 576px){
 
   .home__name{
-    font-size: 4.5rem; 
+    font-size: 4.5rem;
   }
 
   p.home__description{
@@ -1369,6 +1382,15 @@ body.dark-theme{
   .contact__group{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
+  }
+
+  .skills__info{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    gap: 1em;
   }
 
 }
@@ -1414,8 +1436,8 @@ body.dark-theme{
         margin-top: -1rem;
         font-size: 5em;
       }
-    
-    
+
+
     .home__social-link{
       font-size: 2rem;
     }
@@ -1431,7 +1453,7 @@ body.dark-theme{
     .skills__info{
       width: 70%;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 1fr;
       justify-content: space-between;
       gap: 1em;
@@ -1441,8 +1463,8 @@ body.dark-theme{
     .projects__link i{
       font-size: 1.4rem
     }
-  
-    
+
+
 }
 
 /* For large devices */
@@ -1479,7 +1501,7 @@ body.dark-theme{
   .section{
     padding-block: 7rem 2rem;
   }
-  
+
   .section__title-1::after,
   .section__title-1::after{
     width: 70px;
@@ -1548,7 +1570,7 @@ body.dark-theme{
   p.home__description{
     margin-bottom: 2rem;
   }
-  
+
   .home__name{
     margin-bottom: -2rem;
     margin-top: -3rem;
@@ -1598,6 +1620,17 @@ body.dark-theme{
     padding: 1rem;
   }
 
+
+  .skills__info{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+
   .projects__card{
     padding: 1rem 1rem 1rem;
   }
@@ -1634,7 +1667,7 @@ body.dark-theme{
     width: 90%;
     row-gap: 1rem;
     margin-left: 3rem;
-    
+
   }
 
   .contact__container.grid{
@@ -1680,7 +1713,7 @@ body.dark-theme{
     margin:0 0 2rem;
     transform: translateX(-6.5rem);
   }
-  
+
   .contact__social{
     margin-left: 8rem;
     text-align: initial;
@@ -1721,7 +1754,7 @@ body.dark-theme{
 }
 
 @media screen and (min-width: 1540px){
-  
+
   .projects__link,
   .projects__link i{
     font-size: 1.5rem

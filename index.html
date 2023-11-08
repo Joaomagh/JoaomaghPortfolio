@@ -1,556 +1,665 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-      <title>João Magalhães</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               <span class="nav__logo-circle">J</span>
-               <span class="nav__logo-name">João Mag.</span>
+    <title>João Magalhães</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-circle">J</span>
+          <span class="nav__logo-name">João Mag.</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menu</span>
+
+          <h3 class="nav__name">João</h3>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Sobre mim</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Habilidades</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projetos</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link-button">Contato</a>
+            </li>
+          </ul>
+
+          <!--Botao de fechar-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!--Theme button-->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!--botao de navegação sanduiche-->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <p class="home__description">
+            <b></b>
+          </p>
+          <h1 class="home__name">João P. Magalhães</h1>
+
+          <div class="home__perfil">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/joaomagh/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+
+              <a
+                href="https://github.com/Joaomagh"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+
+              <a
+                href="assets/MeuCurriculo.pdf"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-briefcase-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__info">
+            <a href="#about" class="home__scroll">
+              <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+
+              <span class="home__scroll-text">Veja mais</span>
             </a>
+          </div>
+        </div>
+      </section>
 
-            <div class="nav__menu" id="nav-menu">
-               <span class="nav__title">Menu</span>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">
+            <span>Sobre mim.</span>
+          </h2>
 
-               <h3 class="nav__name">João</h3>
+          <div class="about__perfil">
+            <div class="about__image"></div>
 
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link">Home</a>
-                  </li>
+            <div class="about__info">
+              <p class="about__description">
+                Olá! Meu nome é João Pedro Rego Magalhães, sou estudante de
+                Ciência da Computação e comecei a trabalhar como freelancer,
+                oferecendo serviços de programação web.<br /><br />
 
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">Sobre mim</a>
-                  </li>
+                Desde o momento em que ingressei na faculdade, venho aprimorando
+                minhas habilidades, caminhando em direção ao mundo no qual
+                sempre aspirei estar.
+                <br /><br />
+                Durante esse percurso, adquiri conhecimentos fundamentais e
+                essenciais para a área de Tecnologia da Informação, como
+                <b>algoritmos</b>, <b>estrutura de dados</b> e
+                <b>lógica de programação</b>. Descobri que foi no
+                <b>desenvolvimento web</b> que encontrei minha verdadeira
+                paixão, tanto com o <b>front-end</b>, quanto com o
+                <b>backend</b>.<br /><br />
 
-                  <li class="nav__item">
-                     <a href="#skills" class="nav__link">Habilidades</a>
-                  </li>
+                Abaixo você poderá conhecer melhor alguns dos meus serviços,
+                projetos e tecnologias que utilizo no dia a dia.
+              </p>
 
-                  <li class="nav__item">
-                     <a href="#projects" class="nav__link">Projetos</a>
-                  </li>
+              <ul class="about__list">
+                <li class="about__item">
+                  <b>Minhas Habilidades são:</b> HTML, CSS, Javascript, React,
+                  Git & GitHub, Bootstrap e Figma
+                </li>
+              </ul>
 
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link-button">Contato</a>
-                  </li>
-               </ul>
+              <div class="about__buttons">
+                <a href="#contact" class="button">
+                  <i class="ri-send-plane-line"></i> Contato
+                </a>
 
-               <!--Botao de fechar-->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
+                <a
+                  href="https://www.linkedin.com/in/Joaomagh/"
+                  target="_blank"
+                  class="button__ghost"
+                >
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="nav__buttons">
-               <!--Theme button-->
-               <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-               <!--botao de navegação sanduiche-->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i>
-               </div>
-            </div>
-         </nav>
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <div class="home__container container grid">
-               <p class="home__description">
-                  <b></b>
-               </p>
-               <h1 class="home__name">
-                  João P. Magalhães
-               </h1>
-
-               <div class="home__perfil">
-
-                  <div class="home__social">
-                     <a href="https://www.linkedin.com/in/joaomagh/" target="_blank" class="home__social-link">
-                        <i class="ri-linkedin-fill"></i>
-                     </a>
-
-                     <a href="https://github.com/Joaomagh" target="_blank" class="home__social-link">
-                        <i class="ri-github-fill"></i>
-                     </a>
-
-                     <a href="assets/MeuCurriculo.pdf" target="_blank" class="home__social-link">
-                        <i class="ri-briefcase-line"></i>
-                     </a>
-                  </div>
-
-               </div>
-
-               <div class="home__info">
-
-                  <a href="#about" class="home__scroll">
-                  <div class="home__scroll-box">
-                     <i class="ri-arrow-down-s-line"></i>
-                  </div>
-
-                  <span class="home__scroll-text">Veja mais</span>
-                  </a>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            <div class="about__container container grid">
-               <h2 class="section__title-1">
-                     <span>Sobre mim.</span>
-               </h2>
-
-               <div class="about__perfil">
-                  <div class="about__image">
-
-                  </div>
-
-                  <div class="about__info">
-                     <p class="about__description">
-                        Olá! Meu nome é João Pedro Rego Magalhães, sou estudante de Ciência da Computação e comecei a trabalhar como freelancer, oferecendo serviços de programação web.<br><br>
-
-                        Desde o momento em que ingressei na faculdade, venho aprimorando minhas habilidades, caminhando em direção ao mundo no qual sempre aspirei estar.
-                        <br><br>
-                        Durante esse percurso, adquiri conhecimentos fundamentais e essenciais para a área de Tecnologia da Informação, como <b>algoritmos</b>, <b>estrutura de dados</b> e <b>lógica de programação</b>. Descobri que foi no <b>desenvolvimento web</b> que encontrei minha verdadeira paixão, tanto com o <b>front-end</b>, quanto com o <b>backend</b>.<br><br>
-
-                        Abaixo você poderá conhecer melhor alguns dos meus serviços, projetos e tecnologias que utilizo no dia a dia.
-                     </p>
-
-                     <ul class="about__list">
-                        <li class="about__item">
-                           <b>Minhas Habilidades são:</b> HTML, CSS, Javascript, React, Git & GitHub, Bootstrap e Figma
-                        </li>
-                     </ul>
-
-                     <div class="about__buttons">
-                        <a href="#contact" class="button">
-                           <i class="ri-send-plane-line"></i> Contato
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/Joaomagh/" target="_blank" class="button__ghost">
-                           <i class="ri-linkedin-fill"></i>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== SKILLS ====================-->
-         <section class="skills section" id="skills">
-            <div class="skills__container container grid">
-               <h2 class="section__title-1">
-                     <span>Habilidades.</span>
-               </h2>
-               <div class="skills__container container grid section__border">
-                  <!--==================== SKILLS front end ====================-->
-                  <div class="skills__content">
-                     <h3 class="skills__title">
-                        <i class="ri-code-s-slash-line"></i> Frontend
-                     </h3>
-
-                     <div class="skills__info">
-                        <div class="skills__data">
-                           <div class="skills__blob">
-                              <img src="assets/img/html-1.svg" class="svg-img"  alt="skills image">
-                              <h3 class="skills__name">HTML</h3>
-                           </div>
-
-                           <span class="skills__subtitle"></span>
-                        </div>
-
-                        <div class="skills__data">
-                           <div class="skills__blob">
-                              <img src="assets/img/css-3.svg" class="svg-img"  alt="skills image">
-                              <h3 class="skills__name">CSS</h3>
-                           </div>
-                           <span class="skills__subtitle"></span>
-                        </div>
-
-                        <div class="skills__data">
-                           <div class="skills__blob">
-                              <img src="assets/img/logo-javascript.svg" class="svg-img"  alt="skills image">
-                              <h3 class="skills__name">Javascript</h3>
-                           </div>
-
-
-                           <span class="skills__subtitle"></span>
-                        </div>
-
-                        <div class="skills__data">
-                           <div class="skills__blob">
-                              <img src="assets/img/bootstrap-5-1.svg" class="svg-img"  alt="skills image">
-                              <h3 class="skills__name">Bootstrap</h3>
-                           </div>
-
-
-                           <span class="skills__subtitle"></span>
-                        </div>
-
-                        <div class="skills__data">
-                           <div class="skills__blob">
-                              <img src="assets/img/react-2.svg" class="svg-img" alt="skills image" >
-                              <h3 class="skills__name">React</h3>
-                           </div>
-
-
-                           <span class="skills__subtitle"></span>
-                        </div>
-
-                        <div class="skills__data">
-                           <div class="skills__blob">
-                              <img src="assets/img/git-svgrepo-com.svg" class="svg-img"  skills image>
-                              <h3 class="skills__name">GIT</h3>
-                           </div>
-
-
-                           <span class="skills__subtitle"></span>
-                        </div>
-
-
-                     </div>
-                  </div>
-
-                  <!--==================== SKILLS backend ====================-->
-                  <div class="skills__content">
-                     <h3 class="skills__title">
-                        <i class="ri-braces-line"></i> Backend e banco de dados
-                     </h3>
-
-                     <div class="skills__info">
-                        <div class="skills__data">
-                           <div class="skills__blob">
-                              <img src="assets/img/java-14.svg" class="svg-img" alt="skills image">
-                              <h3 class="skills__name">Java</h3>
-                           </div>
-
-                           <span class="skills__subtitle"></span>
-                        </div>
-
-                        <div class="skills__info">
-                           <div class="skills__data">
-                              <div class="skills__blob">
-                                 <img src="assets/img/node-js-svgrepo-com.svg" class="svg-img"  alt="skills image">
-                                 <h3 class="skills__name">Node.JS</h3>
-                              </div>
-
-                              <span class="skills__subtitle"></span>
-                           </div>
-
-                        <div class="skills__info">
-                           <div class="skills__data">
-                              <div class="skills__blob">
-                                 <img src="assets/img/postgresql.svg" class="svg-img"  alt="skills image">
-                                 <h3 class="skills__name">PostgreSQL</h3>
-                              </div>
-
-                              <span class="skills__subtitle"></span>
-                           </div>
-                  </div>
-
-               </div>
-            </div>
-         </section>
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-            <h2 class="section__title-2">
-               <span>Serviços.</span>
-            </h2>
-
-            <div class="services__container container grid">
-               <article class="services__card">
-                  <div class="services__border">
-
-                  </div>
-
-                  <div class="services__content">
-                     <div class="services__icon">
-                        <div class="services__box"></div>
-                        <i class="ri-terminal-box-line"></i>
-                     </div>
-
-                     <h2 class="services__title">Desenvolvedor</h2>
-
-                     <p class="services__description">
-                        Ofereço a criação de sites personalizados, totalmente adaptados às suas especificações. Meu compromisso é garantir a melhor experiência para o usuário, tornando a sua presença online única e atraente.
-                     </p>
-                  </div>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
+       <!--==================== SKILLS ====================-->
+       <section class="skills section" id="skills">
+         <div class="skills__container container grid">
             <h2 class="section__title-1">
-               <span>Projetos.</span>
+                  <span>Habilidades.</span>
+            </h2>
+            <div class="skills__container container grid section__border">
+               <!--==================== SKILLS front end ====================-->
+               <div class="skills__content">
+                  <h3 class="skills__title">
+                     <i class="ri-code-s-slash-line"></i> Frontend
+                  </h3>
+
+                  <div class="skills__info">
+
+                     <div class="skills__data">
+                        <div class="skills__blob">
+                           <img src="assets/img/logo-javascript.svg" class="svg-img"  alt="skills image">
+                           <h3 class="skills__name">Javascript</h3>
+                        </div>
+                     </div>
+
+                     <div class="skills__data">
+                        <div class="skills__blob">
+                           <img src="assets/img/html-1.svg" class="svg-img"  alt="skills image">
+                           <h3 class="skills__name">HTML</h3>
+                        </div>
+                     </div>
+
+                     <div class="skills__data">
+                        <div class="skills__blob">
+                           <img src="assets/img/css-3.svg" class="svg-img"  alt="skills image">
+                           <h3 class="skills__name">CSS</h3>
+                        </div>
+                     </div>
+
+                     <div class="skills__data">
+                        <div class="skills__blob">
+                           <img src="assets/img/react-2.svg" class="svg-img" alt="skills image" >
+                           <h3 class="skills__name">React</h3>
+                        </div>
+                     </div>
+
+                     <div class="skills__data">
+                        <div class="skills__blob">
+                           <img src="assets/img/bootstrap-5-1.svg" class="svg-img"  alt="skills image">
+                           <h3 class="skills__name">Bootstrap</h3>
+                        </div>
+                     </div>
+
+                     <div class="skills__data">
+                        <div class="skills__blob">
+                           <img src="assets/img/git-svgrepo-com.svg" class="svg-img"  skills image>
+                           <h3 class="skills__name">GIT</h3>
+                        </div>
+                     </div>
+
+
+                  </div>
+               </div>
+
+               <!--==================== SKILLS backend ====================-->
+               <div class="skills__content">
+                  <h3 class="skills__title">
+                    <i class="ri-braces-line"></i> Backend e banco de dados
+                  </h3>
+
+                  <div class="skills__info">
+                    <div class="skills__data">
+                      <div class="skills__blob">
+                        <img src="assets/img/java-14.svg" class="svg-img" alt="skills image">
+                        <h3 class="skills__name">Java</h3>
+                      </div>
+                    </div>
+
+                    <div class="skills__data">
+                      <div class="skills__blob">
+                        <img src="assets/img/node-js-svgrepo-com.svg" class="svg-img" alt="skills image">
+                        <h3 class="skills__name">Node.JS</h3>
+                      </div>
+                    </div>
+
+                    <div class="skills__data">
+                      <div class="skills__blob">
+                        <img src="assets/img/postgresql.svg" class="svg-img" alt="skills image">
+                        <h3 class="skills__name">PostgreSQL</h3>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section">
+        <h2 class="section__title-2">
+          <span>Serviços.</span>
+        </h2>
+
+        <div class="services__container container grid">
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-terminal-box-line"></i>
+              </div>
+
+              <h2 class="services__title">Desenvolvedor</h2>
+
+              <p class="services__description">
+                Ofereço a criação de sites personalizados, totalmente adaptados
+                às suas especificações. Meu compromisso é garantir a melhor
+                experiência para o usuário, tornando a sua presença online única
+                e atraente.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+          <span>Projetos.</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/projeto-cripto.png"
+                alt="imagem"
+                class="projects__img"
+              />
+              <a
+                href="https://verificacripto.vercel.app/"
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Verifique as criptomoedas</h3>
+              <h2 class="projects__title">Criptomoeda App</h2>
+
+              <p class="projects__description">
+                Desenvolvi uma página web que fornece informações abrangentes
+                sobre criptomoedas.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/Joaomagh/cripto-app"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-fill"></i> Conferir
+              </a>
+
+              <a
+                href="https://verificacripto.vercel.app/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-fill"></i> Site
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/projeto-controle-fiananceiro.png"
+                alt="imagem"
+                class="projects__img"
+              />
+
+              <a
+                href="https://finance-app-jet.vercel.app/"
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Sistema de Controle Financeiro</h3>
+              <h2 class="projects__title">Controle Financeiro</h2>
+
+              <p class="projects__description">
+                Após identificar um problema no controle das finanças,
+                desenvolvi uma aplicação que registra meus gastos para controlar
+                meu saldo.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/Joaomagh/FinanceApp"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-fill"></i> Conferir
+              </a>
+
+              <a
+                href="https://finance-app-jet.vercel.app/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-fill"></i> Site
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/projeto_climareact.png"
+                alt="imagem do projeto"
+                class="projects__img"
+              />
+
+              <a
+                href="https://clima-app-two-sigma.vercel.app/"
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Controle do Clima</h3>
+              <h2 class="projects__title">Clima App</h2>
+
+              <p class="projects__description">
+                Criei uma aplicação que fornece informações sobre a temperatura,
+                clima, velocidade do vento e umidade de várias cidades.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/Joaomagh/Clima-app"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-fill"></i> Conferir
+              </a>
+
+              <a
+                href="https://clima-app-two-sigma.vercel.app/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-fill"></i> Site
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/projeto-kanban-board.png"
+                alt="imagem do projeto1"
+                class="projects__img"
+              />
+
+              <a
+                href="https://kanban-boardjoao.vercel.app/"
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Produtividade</h3>
+              <h2 class="projects__title">kanban-board</h2>
+
+              <p class="projects__description">
+                Após identificar um problema na produtividade, desenvolvi uma
+                aplicação que organiza e controla o andamentos de tarefas.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/Joaomagh/Kanban-board"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-fill"></i> Conferir
+              </a>
+
+              <a
+                href="https://kanban-boardjoao.vercel.app/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-fill"></i> Site
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
+            <h2 class="section__title-2">
+              <span>Contato.</span>
             </h2>
 
-            <div class="projects__container container grid">
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/projeto-cripto.png" alt="imagem" class="projects__img">
-                     <a href="https://verificacripto.vercel.app/" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
+            <p class="contact__description-1">
+              Me mande um email e eu vou te responder.
+            </p>
 
-                  <div class="projects__content">
-                    <h3 class="projects__subtitle">Verifique as criptomoedas</h3>
-                     <h2 class="projects__title">Criptomoeda App
-                     </h2>
+            <p class="contact__description-2">
+              Eu Preciso do seu <b>Nome</b> e <b>Email</b>
+            </p>
+          </div>
 
-                     <p class="projects__description">
-                        Desenvolvi uma página web que fornece informações abrangentes sobre criptomoedas.
-                     </p>
-                  </div>
+          <div class="contact__mail">
+            <h2 class="contact__title">Mande uma mensagem</h2>
 
-                  <div class="projects__buttons">
-                     <a href="https://github.com/Joaomagh/cripto-app" target="_blank" class="projects__link">
-                        <i class="ri-github-fill"></i> Conferir
-                     </a>
+            <form
+              action="https://api.staticforms.xyz/submit"
+              method="POST"
+              class="contact__form"
+              id="contact-form"
+            >
+              <input
+                type="hidden"
+                name="accessKey"
+                value="c74f4ad5-ed1b-490f-9d0a-86b12383a340"
+              />
+              <input
+                type="hidden"
+                name="redirectTo"
+                value="https://joaomaghportfolio.netlify.app"
+              />
 
-                     <a href="https://verificacripto.vercel.app/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-fill"></i> Site
-                     </a>
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    name="name"
+                    class="contact__input"
+                    id="name"
+                    required
+                    placeholder="Nome"
+                  />
+                  <label for="name" class="contact__label">Nome</label>
+                </div>
 
-                  </div>
-               </article>
+                <div class="contact__box">
+                  <input
+                    type="email"
+                    name="email"
+                    class="contact__input"
+                    id="email"
+                    required
+                    placeholder="Email"
+                  />
+                  <label for="email" class="contact__label">Email</label>
+                </div>
+              </div>
 
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/projeto-controle-fiananceiro.png" alt="imagem" class="projects__img">
+              <div class="contact__box">
+                <input
+                  type="text"
+                  name="subject"
+                  class="contact__input"
+                  id="subject"
+                  required
+                  placeholder="Assunto"
+                />
+                <label for="subject" class="contact__label">Assunto</label>
+              </div>
 
-                     <a href="https://finance-app-jet.vercel.app/" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
+              <div class="contact__box contact__area">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="contact__input"
+                  required
+                  placeholder="Mensagem"
+                ></textarea>
+                <label for="message" class="contact__label">Mensagem</label>
+              </div>
 
-                  <div class="projects__content">
-                    <h3 class="projects__subtitle">Sistema de Controle Financeiro</h3>
-                     <h2 class="projects__title">
-                        Controle Financeiro
-                     </h2>
+              <p class="contact__message" id="contact-message"></p>
 
-                     <p class="projects__description">
-                        Após identificar um problema no controle das finanças, desenvolvi uma aplicação que registra meus gastos para controlar meu saldo.
-                     </p>
-                  </div>
+              <button type="submit" class="contact__button button" data-button>
+                <i class="ri-mail-send-line"></i> Enviar
+              </button>
+            </form>
+          </div>
 
-                  <div class="projects__buttons">
-                     <a href="https://github.com/Joaomagh/FinanceApp" target="_blank" class="projects__link">
-                        <i class="ri-github-fill"></i> Conferir
-                     </a>
+          <div class="contact__social">
+            <img
+              src="assets/img/curved-arrow.svg"
+              alt=""
+              class="contact__social-arrow"
+            />
+            <div class="contact__social-data">
+              <div>
+                <p class="contact__social-description-1">
+                  Contacte-me de forma mais prática nas minhas redes sociais.
+                </p>
+              </div>
 
-                     <a href="https://finance-app-jet.vercel.app/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-fill"></i> Site
-                     </a>
+              <div class="contact__social-links">
+                <a
+                  href="https://api.whatsapp.com/send?phone=5585981485828&text=Ol%C3%A1,%20Joao!%20vim%20atrav%C3%A9s%20do%20seu%20site."
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-whatsapp-line"></i>
+                </a>
 
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/projeto_climareact.png" alt="imagem do projeto" class="projects__img">
-
-                     <a href="https://clima-app-two-sigma.vercel.app/" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                    <h3 class="projects__subtitle">Controle do Clima</h3>
-                     <h2 class="projects__title">Clima App
-                     </h2>
-
-                     <p class="projects__description">
-                        Criei uma aplicação que fornece informações sobre a temperatura, clima, velocidade do vento e umidade de várias cidades.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://github.com/Joaomagh/Clima-app" target="_blank" class="projects__link">
-                        <i class="ri-github-fill"></i> Conferir
-                     </a>
-
-                     <a href="https://clima-app-two-sigma.vercel.app/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-fill"></i> Site
-                     </a>
-
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/projeto-kanban-board.png" alt="imagem do projeto1" class="projects__img">
-
-                     <a href="https://kanban-boardjoao.vercel.app/" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                    <h3 class="projects__subtitle">Produtividade</h3>
-                     <h2 class="projects__title">kanban-board
-                     </h2>
-
-                     <p class="projects__description">
-                        Após identificar um problema na produtividade, desenvolvi uma aplicação que organiza e controla o andamentos de tarefas.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://github.com/Joaomagh/Kanban-board" target="_blank" class="projects__link">
-                        <i class="ri-github-fill"></i> Conferir
-                     </a>
-
-                     <a href="https://kanban-boardjoao.vercel.app/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-fill"></i> Site
-                     </a>
-
-                  </div>
-
-               </article>
-
+                <a
+                  href="https://www.linkedin.com/in/Joaomagh/"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </div>
             </div>
-         </section>
+          </div>
+        </div>
+      </section>
+    </main>
 
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            <div class="contact__container grid">
-               <div class="contact__data">
-                 <h2 class="section__title-2">
-                  <span>Contato.</span>
-                 </h2>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a href="#about" class="footer__link">Sobre mim</a>
+          </li>
 
-                 <p class="contact__description-1">
-                  Me mande um email e eu vou te responder.
-                 </p>
+          <li>
+            <a href="#skills" class="footer__link">Habilidades</a>
+          </li>
 
-                 <p class="contact__description-2">
-                  Eu Preciso do seu <b>Nome</b> e <b>Email</b>
-                 </p>
-               </div>
+          <li>
+            <a href="#projects" class="footer__link">Projetos</a>
+          </li>
+        </ul>
 
-               <div class="contact__mail">
-                  <h2 class="contact__title">
-                     Mande uma mensagem
-                  </h2>
+        <span class="footer__copy">
+          &#169; Todos os Direitos Reservados
+          <a href="#">Joao Pedro Rego Magalhães.</a>
+        </span>
+      </div>
+    </footer>
 
-                  <form action="https://api.staticforms.xyz/submit" method="POST" class="contact__form" id="contact-form">
-                     <input type="hidden" name="accessKey" value="c74f4ad5-ed1b-490f-9d0a-86b12383a340">
-                     <input type="hidden" name="redirectTo" value="https://joaomaghportfolio.netlify.app">
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
 
-                     <div class="contact__group">
-                        <div class="contact__box">
-                          <input type="text" name="name" class="contact__input" id="name" required placeholder="Nome">
-                          <label for="name" class="contact__label">Nome</label>
-                        </div>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-                        <div class="contact__box">
-                           <input type="email" name="email" class="contact__input" id="email" required placeholder="Email">
-                           <label for="email" class="contact__label">Email</label>
-                         </div>
-                     </div>
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-                     <div class="contact__box">
-                        <input type="text" name="subject" class="contact__input" id="subject" required placeholder="Assunto">
-                        <label for="subject" class="contact__label">Assunto</label>
-                      </div>
-
-                      <div class="contact__box contact__area">
-                        <textarea name="message" id="message" class="contact__input" required placeholder="Mensagem"></textarea>
-                        <label for="message" class="contact__label">Mensagem</label>
-                      </div>
-
-                      <p class="contact__message" id="contact-message"></p>
-
-                      <button type="submit" class="contact__button button" data-button>
-                        <i class="ri-mail-send-line"></i> Enviar
-                      </button>
-                  </form>
-
-               </div>
-
-               <div class="contact__social">
-                  <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
-                  <div class="contact__social-data">
-                     <div>
-                        <p class="contact__social-description-1">
-                           Contacte-me de forma mais prática nas minhas redes sociais.
-                        </p>
-                     </div>
-
-                     <div class="contact__social-links">
-                        <a href="https://api.whatsapp.com/send?phone=5585981485828&text=Ol%C3%A1,%20Joao!%20vim%20atrav%C3%A9s%20do%20seu%20site." target="_blank" class="contact__social-link">
-                           <i class="ri-whatsapp-line"></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/Joaomagh/" target="_blank" class="contact__social-link">
-                           <i class="ri-linkedin-fill"></i>
-                        </a>
-
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <ul class="footer__links">
-               <li>
-                  <a href="#about" class="footer__link">Sobre mim</a>
-               </li>
-
-               <li>
-                  <a href="#skills" class="footer__link">Habilidades</a>
-               </li>
-
-               <li>
-                  <a href="#projects" class="footer__link">Projetos</a>
-               </li>
-            </ul>
-
-            <span class="footer__copy">
-               &#169; Todos os Direitos Reservados
-               <a href="#">Joao Pedro Rego Magalhães.</a>
-            </span>
-         </div>
-      </footer>
-
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-s-line"></i>
-      </a>
-
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js"></script>
-
-      <!--=============== EMAIL JS ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
